@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="509.0" prefWidth="301.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="minijuegos.Main.MainController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="320.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ListView fx:id="lstJuegos" layoutX="51.0" layoutY="18.0" onMouseClicked="#lstJuegosOnMouseClicked" prefHeight="314.0" prefWidth="200.0" />
+                  <Button fx:id="btnJugar" layoutX="51.0" layoutY="341.0" mnemonicParsing="false" onAction="#btnJugarOnAction" prefHeight="41.0" prefWidth="200.0" text="Jugar">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </center>
+         <bottom>
+            <Pane prefHeight="45.0" prefWidth="301.0" style="-fx-background-color: gray;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="100.0" layoutY="15.0" text="FullerD3V 2022" textFill="WHITE" />
+               </children>
+            </Pane>
+         </bottom>
+         <top>
+            <Pane prefHeight="74.0" prefWidth="301.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="txtBuscar" layoutX="51.0" layoutY="24.0" onKeyReleased="#txtBuscarOnKeyReleased" onKeyTyped="#txtBuscarOnKeyTyped" prefWidth="200.0" promptText="Buscar..." />
+               </children>
+            </Pane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

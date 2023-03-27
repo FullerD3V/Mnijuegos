@@ -1,0 +1,13 @@
+Backgammon
+Buscaminas
+Damas
+Reversi
+Tetris
+Suerte
+Dados
+Solitario
+Brisca
+Ajedrez
+Domino
+Connect
+Memory
